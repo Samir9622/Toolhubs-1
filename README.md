@@ -116,8 +116,8 @@
 <div class="ads-container">
   <ins class="adsbygoogle"
        style="display:block"
-       data-ad-client=8773480799818158"
-       data-ad-slot=to"ca-pub-9354903383
+       data-ad-client-"8773480799818158"
+       data-ad-slot=to"ca-pub-9354903383"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
   <script>
