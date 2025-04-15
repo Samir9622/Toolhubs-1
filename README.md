@@ -22,7 +22,7 @@
   </div>
   
 
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9354903383" data-ad-slot="2486822494" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-"877348079981" data-ad-slot="9354903383" data-ad-format="auto" data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <div class="tools-grid">
@@ -62,11 +62,11 @@
     </div>
   </div>
 
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9055111364" data-ad-slot="2486822494" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-877348079981" data-ad-slot="9055111364" data-ad-format="auto" data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <script>
-    function switchTool(id) {
+   l function switchTool(id) {
       document.querySelectorAll('.tool-section').forEach(sec => sec.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
