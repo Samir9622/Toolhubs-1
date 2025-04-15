@@ -2,64 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="ToolHubs-1 - All-in-One Free Online Tools Hub"/>
-  <title>ToolHubs-1 | All-in-One Tools</title>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet"/>
-
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8773480799818158" crossorigin="anonymous"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToolHub 1</title>
+  <meta name="description" content="All-in-one free online tools - ToolHub 1" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(145deg, #fceabb, #f8b500);
+      background: #f0f2f5;
       color: #333;
     }
-
     header {
-      background: linear-gradient(145deg, #ff416c, #ff4b2b);
-      padding: 60px 20px 30px;
+      background: linear-gradient(145deg, #f9d423, #ff4e50);
+      padding: 60px 20px;
       text-align: center;
       color: #fff;
-      border-radius: 0 0 25px 25px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
-
     header h1 {
       font-size: 3em;
       margin: 0;
-      text-shadow: 2px 2px 5px #00000055;
+      text-shadow: 2px 2px 4px #00000050;
     }
-
     header p {
       font-size: 1.4em;
       max-width: 800px;
       margin: 20px auto 0;
       line-height: 1.6;
     }
-
-    .switcher {
+    .switch-section {
       text-align: center;
-      margin: 40px auto 20px;
-      padding: 20px;
-      background: #fff8e1;
-      border-radius: 15px;
-      max-width: 320px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin: 20px 0;
     }
-
     select {
-      font-size: 1.2em;
-      padding: 12px 20px;
-      border-radius: 10px;
-      border: 2px solid #ff9800;
-      background: #fffef7;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
+      font-size: 1em;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
-
     .tools-grid {
       display: flex;
       flex-wrap: wrap;
@@ -67,7 +49,6 @@
       gap: 20px;
       padding: 40px 20px;
     }
-
     .tool-card {
       background: #ffffffcc;
       border: 2px solid #ddd;
@@ -78,83 +59,75 @@
       text-align: center;
       transition: all 0.3s ease;
     }
-
     .tool-card:hover {
       transform: translateY(-6px) scale(1.03);
       background: #ffe;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     }
-
     .tool-card h2 {
       color: #ff4e50;
       font-size: 1.3em;
       margin-bottom: 10px;
     }
-
     .tool-card p {
       font-size: 1em;
       color: #444;
     }
-
     .footer {
       text-align: center;
       padding: 30px;
       background: #fff;
       color: #666;
       font-size: 1em;
-      margin-top: 20px;
     }
-
+    .ad-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px auto;
+    }
     @media (max-width: 600px) {
       .tool-card {
         width: 90%;
       }
-
       header h1 {
         font-size: 2.2em;
       }
-
       header p {
         font-size: 1.1em;
       }
-
-      .switcher {
-        max-width: 90%;
-      }
     }
   </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8773480799818158" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <header>
     <h1>Welcome to ToolHubs-1!</h1>
     <p>Your ultimate playground of <strong>smart, stylish & superfast tools</strong> — All in One Place!</p>
   </header>
 
-  <div class="switcher">
-    <label for="toolSelect"><strong>Select a Tool:</strong></label><br><br>
-    <select id="toolSelect" onchange="navigateToTool()">
+  <div class="switch-section">
+    <label for="toolSwitch">Select a Tool:</label>
+    <select id="toolSwitch" onchange="switchTool()">
       <option value="">-- Choose Tool --</option>
-      <option value="image-compressor">Image Compressor</option>
-      <option value="online-calculator">Online Calculator</option>
-      <option value="stopwatch-timer">Stopwatch & Timer</option>
-      <option value="qr-code-generator">QR Code Generator</option>
-      <option value="text-case-converter">Text Case Converter</option>
-      <option value="password-generator">Password Generator</option>
-      <option value="unit-converter">Unit Converter</option>
-      <option value="color-picker">Color Picker</option>
-      <option value="word-counter">Word Counter</option>
+      <option value="image-compressor.html">Image Compressor</option>
+      <option value="online-calculator.html">Online Calculator</option>
+      <option value="stopwatch-timer.html">Stopwatch & Timer</option>
+      <option value="qr-code-generator.html">QR Code Generator</option>
+      <option value="text-case-converter.html">Text Case Converter</option>
+      <option value="password-generator.html">Password Generator</option>
+      <option value="unit-converter.html">Unit Converter</option>
+      <option value="color-picker.html">Color Picker</option>
+      <option value="word-counter.html">Word Counter</option>
     </select>
   </div>
 
-  <!-- Top AdSense Unit -->
-  <div style="text-align: center; margin: 20px 0;">
+  <div class="ad-container">
     <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="877348079981"
-         data-ad-slot="9354903383"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+      style="display:block"
+      data-ad-client="ca-877348079981"
+      data-ad-slot="ca-pub-9354903383"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
@@ -170,31 +143,27 @@
     <div class="tool-card"><h2>Word Counter</h2><p>Count words, characters, and lines in real time.</p></div>
   </section>
 
-  <!-- Bottom AdSense Unit -->
-  <div style="text-align: center; margin: 40px 0;">
+  <div class="ad-container">
     <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="877348079981"
-         data-ad-slot-"9055111364"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+      style="display:block"
+      data-ad-client="877348079981"
+      data-ad-slot="ca-pub-9055111364"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <div class="footer">
-    <p><strong>Click any tool above or select from the dropdown!</strong><br>
+    <p><strong>Click any tool above and start exploring!</strong><br>
     Bright. Bold. Beautiful. That’s <span style="color: #ff4e50;">ToolHubs-1</span>.</p>
   </div>
 
   <script>
-    function n
-avigateToTool() {
-      const tool = document.getElementById('toolSelect').value;
-      if (tool) {
-        window.location.href = tool + '.html';
-      }
+    function switchTo
+ol() {
+      const selected = document.getElementById("toolSwitch").value;
+      if (selected) window.location.href = selected;
     }
   </script>
-
 </body>
 </html>
