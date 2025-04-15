@@ -116,15 +116,13 @@
         <p>Your ultimate playground of <strong>smart, stylish & superfast tools</strong> — All in One Place!</p>
     </header>
 
-    <!-- Top Ad Unit -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8773480799818158" crossorigin="anonymous"></script>
+    <!-- Top Ad -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-8773480799818158"
-     data-ad-slot="3941204223"
+     data-ad-slot="YOUR_ADMOB_AD_UNIT_ID_HERE"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 
     <div class="switch-section">
@@ -195,17 +193,16 @@
         </div>
     </div>
 
-    <!-- Bottom Ad Unit -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8773480799818158" crossorigin="anonymous"></script>
+<!-- Bottom Ad -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-8773480799818158"
-     data-ad-slot="9505617632"
+     data-ad-slot="YOUR_ADMOB_AD_UNIT_ID_HERE"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push
-
-    <script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
         // Tool Switching Logic
         function showTool(toolId) {
             document.querySelectorAll('.tool-content').forEach(tool => {
