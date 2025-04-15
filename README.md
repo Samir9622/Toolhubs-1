@@ -116,8 +116,8 @@
 <div class="ads-container">
   <ins class="adsbygoogle"
        style="display:block"
-       data-ad-client="ca-pub-9354903383"
-       data-ad-slot="8773480799818158"
+       data-ad-client=8773480799818158"
+       data-ad-slot=to"ca-pub-9354903383
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
   <script>
@@ -168,8 +168,8 @@
 <div class="ads-container">
   <ins class="adsbygoogle"
        style="display:block"
-       data-ad-client="ca-pub-9055111364"
-       data-ad-slot="8773480799818158"
+       data-ad-client="8773480799818158"
+       data-ad-slot="ca-app-pub-9055111364"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
   <script>
