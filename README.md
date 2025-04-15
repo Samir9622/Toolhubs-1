@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToolHubs 1 - All-in-One Tools</title>
+    <title>ToolHub - All-in-One Online Tools</title>
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.min.js"></script>
     <style>
         /* Base Styles */
         body {
@@ -13,6 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f0f2f5;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
@@ -20,53 +20,55 @@
             padding: 60px 20px;
             text-align: center;
             color: #fff;
-            border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
         }
 
-        /* Tool Grid & Cards */
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+        /* Tool Selector */
+        .tool-selector {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 15px;
         }
 
-        .tool-card {
-            background: #ffffffcc;
-            border: 2px solid #ddd;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
+        #toolSwitch {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #ff4e50;
+            font-size: 16px;
+            background: white;
         }
 
-        .tool-card:hover {
-            transform: translateY(-6px) scale(1.03);
-            background: #ffe;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Tool Content Styles */
-        .tool-content {
+        /* Tool Sections */
+        .tool-section {
             max-width: 800px;
             margin: 30px auto;
-            padding: 20px;
+            padding: 25px;
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             display: none;
+            animation: fadeIn 0.3s ease;
         }
 
-        .active-tool {
+        .tool-section.active-tool {
             display: block;
         }
 
-        /* Common Form Elements */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Ad Containers */
+        .ad-container {
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Tool Elements */
         .tool-input, select {
             width: 100%;
             padding: 12px;
@@ -85,11 +87,7 @@
             cursor: pointer;
             font-size: 16px;
             transition: background 0.3s;
-            margin: 5px;
-        }
-
-        .tool-button:hover {
-            background: #ff3638;
+            margin: 10px 5px;
         }
 
         .result-output {
@@ -97,54 +95,41 @@
             padding: 15px;
             background: #f8f9fa;
             border-radius: 8px;
-            word-break: break-all;
-        }
-
-        /* Ad Containers */
-        .ad-container {
-            text-align: center;
-            margin: 20px auto;
-            padding: 10px;
+            word-break: break-word;
         }
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-877348079981"
-            crossorigin="anonymous"></script>
+    <!-- AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8773480799818158" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to ToolHubs-1!</h1>
-        <p>Your ultimate playground of <strong>smart, stylish & superfast tools</strong> — All in One Place!</p>
+        <h1>ToolHub Pro</h1>
+        <p>Your Ultimate Online Toolbox</p>
     </header>
 
-<!-- Top Ad Unit -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8773480799818158" crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8773480799818158"
-     data-ad-slot="3941204223"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <!-- Top Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8773480799818158"
+             data-ad-slot="3941204223"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
 
-
-    <div class="switch-section">
-        <label for="toolSwitch">Select a Tool:</label>
+    <div class="tool-selector">
         <select id="toolSwitch" onchange="showTool(this.value)">
-            <option value="">-- Choose Tool --</option>
+            <option value="">Select a Tool</option>
             <option value="password-generator">Password Generator</option>
             <option value="case-converter">Text Case Converter</option>
             <option value="word-counter">Word Counter</option>
             <option value="color-picker">Color Picker</option>
             <option value="image-compressor">Image Compressor</option>
-            <option value="calculator">Calculator</option>
-            <option value="stopwatch">Stopwatch</option>
-            <option value="qr-generator">QR Generator</option>
-            <option value="unit-converter">Unit Converter</option>
         </select>
     </div>
 
-    <!-- Tools Content -->
-    <div id="password-generator" class="tool-content">
+    <!-- Tools Sections -->
+    <div id="password-generator" class="tool-section">
         <h2>🔒 Password Generator</h2>
         <input type="number" id="pass-length" value="12" min="8" max="50" class="tool-input">
         <div>
@@ -156,7 +141,7 @@
         <div id="password-result" class="result-output"></div>
     </div>
 
-    <div id="case-converter" class="tool-content">
+    <div id="case-converter" class="tool-section">
         <h2>🔄 Text Case Converter</h2>
         <textarea id="case-input" class="tool-input" rows="5" placeholder="Enter text..."></textarea>
         <button onclick="convertCase('upper')" class="tool-button">UPPERCASE</button>
@@ -165,7 +150,7 @@
         <div id="case-output" class="result-output"></div>
     </div>
 
-    <div id="word-counter" class="tool-content">
+    <div id="word-counter" class="tool-section">
         <h2>📝 Word Counter</h2>
         <textarea id="word-input" class="tool-input" rows="5" placeholder="Start typing..."></textarea>
         <div class="result-output">
@@ -174,46 +159,41 @@
         </div>
     </div>
 
-    <div id="color-picker" class="tool-content">
+    <div id="color-picker" class="tool-section">
         <h2>🎨 Color Picker</h2>
         <input type="color" id="color-input" value="#ff4e50" class="tool-input">
         <div class="result-output" id="color-hex">Hex: #ff4e50</div>
     </div>
 
-    <div id="image-compressor" class="tool-content">
+    <div id="image-compressor" class="tool-section">
         <h2>🖼️ Image Compressor</h2>
         <input type="file" id="image-input" accept="image/*" class="tool-input">
-        <canvas id="image-canvas" hidden></canvas>
+        <canvas id="image-canvas" style="display:none;"></canvas>
         <div id="compressed-image" class="result-output"></div>
     </div>
 
-    <div id="calculator" class="tool-content">
-        <h2>🧮 Calculator</h2>
-        <input type="text" id="calc-display" class="tool-input" readonly>
-        <div class="calculator-buttons">
-            <!-- Calculator buttons would be added here -->
-        </div>
+    <!-- Bottom Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8773480799818158"
+             data-ad-slot="9505617632"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
     </div>
 
-    <!-- Bottom Ad Unit -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8773480799818158" crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8773480799818158"
-     data-ad-slot="9505617632"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push
-
     <script>
-        // Tool Switching Logic
+        // Tool Visibility Control
         function showTool(toolId) {
-            document.querySelectorAll('.tool-content').forEach(tool => {
-                tool.style.display = 'none';
+            document.querySelectorAll('.tool-section').forEach(tool => {
+                tool.classList.remove('active-tool');
             });
             if (toolId) {
-                document.getElementById(toolId).style.display = 'block';
-                window.scrollTo(0, document.getElementById(toolId).offsetTop - 100);
+                document.getElementById(toolId).classList.add('active-tool');
+                window.scrollTo({
+                    top: document.getElementById(toolId).offsetTop - 100,
+                    behavior: 'smooth'
+                });
             }
         }
 
@@ -231,7 +211,7 @@
             
             let password = '';
             for (let i = 0; i < length; i++) {
-                password += chars.charAt(Math.floor(Math.random() * chars.length));
+                password += chars[Math.floor(Math.random() * chars.length)];
             }
             document.getElementById('password-result').textContent = password;
         }
@@ -252,9 +232,9 @@
 
         // Word Counter
         document.getElementById('word-input').addEventListener('input', function() {
-            const text = this.value;
+            const text = this.value.trim();
             document.getElementById('word-count').textContent = 
-                text.trim().split(/\s+/).filter(word => word.length > 0).length;
+                text ? text.split(/\s+/).length : 0;
             document.getElementById('char-count').textContent = text.length;
         });
 
@@ -266,19 +246,23 @@
         // Image Compressor
         document.getElementById('image-input').addEventListener('change', function(e) {
             const file = e.target.files[0];
+            if (!file) return;
+
             const reader = new FileReader();
             reader.onload = function(event) {
                 const img = new Image();
                 img.src = event.target.result;
+                
                 img.onload = function() {
                     const canvas = document.getElementById('image-canvas');
                     const ctx = canvas.getContext('2d');
                     canvas.width = img.width;
                     canvas.height = img.height;
                     ctx.drawImage(img, 0, 0);
+                    
                     const compressed = canvas.toDataURL('image/jpeg', 0.7);
                     document.getElementById('compressed-image').innerHTML = `
-                        <a href="${compressed}" download="compressed.jpg">
+                        <a href="${compressed}" download="compressed.jpg" class="tool-button">
                             Download Compressed Image
                         </a>`;
                 };
@@ -287,7 +271,14 @@
         });
 
         // Initialize Ads
-        (adsbygoogle = window.adsbygoogle || []).push({});
+        document.addEventListener('DOMContentLoaded', () => {
+            // Show default tool
+            showTool('password-generator');
+            
+            // Load ads
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        });
     </script>
 </body>
 </html>
