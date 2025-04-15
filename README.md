@@ -124,7 +124,7 @@
   <div class="ad-container">
     <ins class="adsbygoogle"
       style="display:block"
-      data-ad-client="ca-877348079981"
+      data-ad-client="-877348079981"
       data-ad-slot="ca-pub-9354903383"
       data-ad-format="auto"
       data-full-width-responsive="true"></ins>
