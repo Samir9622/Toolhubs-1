@@ -107,15 +107,16 @@
         <p>Your Ultimate Online Toolbox</p>
     </header>
 
-    <!-- Top Ad -->
-    <div class="ad-container">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-"8773480799818158"
-             data-ad-slot="3941204223"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-    </div>
+    <!-- AdSense Ad Unit -->ca-app-pub-8773480799818158/9354903383      
+     <ins class="adsbygoogle" 
+     style="display:block"
+     data-ad-client="ca-pub-8773480799818158"
+     data-ad-slot="9354903383"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
 
     <div class="tool-selector">
         <select id="toolSwitch" onchange="showTool(this.value)">
