@@ -173,14 +173,17 @@
         <div id="compressed-image" class="result-output"></div>
     </div>
 
-    <!-- Bottom Ad -->
-    <div class="ad-container">
+    <!-- AdSense Ad Unit -->ca-app-pub-8773480799818158/9055111364      
         <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-"8773480799818158"
-             data-ad-slot="9505617632"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+     style="display:block"
+     data-ad-client="ca-pub-8773480799818158"
+     data-ad-slot="9055111364"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
     </div>
 
     <script>
