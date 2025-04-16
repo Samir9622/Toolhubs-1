@@ -112,7 +112,7 @@
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-8773480799818158"
-             data-ad-slot="3941204223"
+             data-ad-slot="9354903383"
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
     </div>
@@ -177,7 +177,7 @@
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-8773480799818158"
-             data-ad-slot="9505617632"
+             data-ad-slot="9055111364"
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
     </div>
