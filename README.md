@@ -286,19 +286,6 @@
         });
     </script>
 </body>
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const code = params.get("code");
-  const error = params.get("error");
 
-  if (code) {
-    // Auto-redirect to your Firebase function, backend, or just display
-    window.location.href = `https://your-site.com/receive-auth?code=${code}`;
-  } else if (error) {
-    document.body.innerHTML = `<h2>Error: ${error}</h2>`;
-  } else {
-    document.body.innerHTML = "<h2>No code received. Please try again.</h2>";
-  }
-</script>
 
 </html>
